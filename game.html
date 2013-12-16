@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Connet 4</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+	
+<h1>Connect 4<span>By Harsh Pandya</span></h1>	
+
+<!--<div id="controls" class="control">
+	<input type="button" id="create_puzzle" value="Start game"  />	
+</div>-->
+
+<p>Truly Reusable and Scalable solution.</br>
+See game.html to see how two different ways we have used this component.</br>
+Use config Object to set the behavior of your component.</p>
+
+<div id = "connectFourGame1" class="connectFour"></div>
+<div id = "connectFourGame2" class="connectFour"></div>
+
+
+<!-- Adding External Javascript here, Ideally only one Js -->
+<script type="application/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="application/javascript" src="js/connect.js"></script>
+
+<script>
+     
+(function(){
+    var config_connectFour = {
+        row: 6,
+        col: 12,
+        rounds: 1,
+        p1: "Player 1",
+        p2: "Player 2"        
+    };
+    var connectFour = new HpApp.comp.ConnectFour($('#connectFourGame1'), config_connectFour);
+})();
+
+
+    
+    
+(function(){    
+    var connectFour2 = new HpApp.comp.ConnectFour($('#connectFourGame2'), {});
+})();
+
+</script>
+
+</body>
+</html>
