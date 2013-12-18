@@ -1,4 +1,4 @@
-Connect 4By Harsh Pandya
+Connect 4 Game By Harsh Pandya
 
 Truly Reusable and Scalable solution.
 See game.html to see how two different ways we have used this component.
